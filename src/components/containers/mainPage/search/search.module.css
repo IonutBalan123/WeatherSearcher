@@ -1,0 +1,36 @@
+.Search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Search input {
+  margin-top: 50px;
+  width: 30%;
+  height: auto;
+  font-size: 30px;
+  border: none;
+  border-bottom: 2px solid rgb(255, 166, 0);
+}
+.Search button {
+  align-self: flex-end;
+  font-size: 27px;
+  padding: 2px 5px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 166, 0);
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .Search input {
+    font-size: 20px;
+    width: 50%;
+    margin-top: 25px;
+  }
+  .Search button {
+    font-size: 20px;
+  }
+}

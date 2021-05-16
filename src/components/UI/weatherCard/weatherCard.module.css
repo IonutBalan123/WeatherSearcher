@@ -1,0 +1,175 @@
+.WeatherCard {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  display: grid;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: default;
+}
+.NameDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.NameDiv sup {
+  background-color: #ffa600;
+  border-radius: 10px;
+  height: 18px;
+  color: white;
+  padding: 1px 9px;
+}
+.NameDiv h1 {
+  margin: 0;
+  font-size:40px
+}
+.UpDiv {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.IconDiv img {
+  width: 125px;
+}
+.IconDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: 500;
+}
+.IconDiv p {
+  margin: 0;
+  text-transform: capitalize;
+}
+.UpDivData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.UpDivDataTempDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UpDivDataTemp {
+  font-size: 50px;
+  font-weight: 500;
+}
+.UpDivData p {
+  margin: 0;
+}
+.UpDivData span {
+  font-weight: 500;
+}
+.Celsius{
+  font-weight: normal !important;
+  color:#ffa600;
+  margin:0;
+  /* margin-left: -10px; */
+}
+.UpDivDataInner {
+  display: flex;
+}
+.UpDivDataFeelsLike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ChangingData {
+  font-weight: 500;
+  margin-left: 5px;
+}
+sub {
+  font-size: 10px;
+}
+.ShowButtonDiv {
+  align-items: center;
+  justify-content: center;
+}
+.ShowButtonDiv button {
+  border: none;
+  background-color: #ffa600;
+  color:white;
+  font-size:20px;
+  border-radius: 10px;
+  cursor:pointer;
+  margin-bottom:5px;
+}
+
+.MiddleDiv {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+.MiddleDivInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.MiddleDivInner img {
+  width: 60px;
+}
+
+.LittleDataDiv {
+  border-right: 2px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom:10px;
+}
+.LittleDataDiv:last-of-type {
+  border-right: none;
+}
+.LittleDataDivTime {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 500;
+}
+.LittleDataDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.LittleDataDescription img {
+  width: 75px;
+}
+.LittleDataDescription p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size:17px;
+}
+.LittleDataDivTemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+@media only screen and (max-width: 600px) {
+  .WeatherCard {
+    width: 97%;
+    height: 550px;
+    margin-top:20px;
+  }
+  .UpDivData {
+    font-size: 20px;
+  }
+  .MiddleDivInner img {
+    width: 50px;
+  }
+  .TimeSpan{
+    font-size:17px
+  }
+  .LittleDataDivTemp {
+    font-size: 23px;
+  }
+  .LittleDataDescription p {
+    font-size: 11px;
+    font-weight: 450;
+    
+  }
+}
